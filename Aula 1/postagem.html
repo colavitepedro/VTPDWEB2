@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postagem com Imagem</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+    .navbar {
+      background: #cfd8e6;
+      padding: 8px 0;
+      text-align: right;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+    }
+    .navbar a {
+      color: #222;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 500;
+      transition: background 0.2s, color 0.2s;
+      padding: 4px 8px;
+      border-radius: 3px;
+    }
+    .navbar a.active, .navbar a:hover {
+      background: #4b2e83;
+      color: #fff;
+    }
+    .main-title {
+      text-align: center;
+      font-family: 'Oswald', Arial, sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+      margin-top: 32px;
+      margin-bottom: 24px;
+    }
+    .content {
+      display: flex;
+      gap: 32px;
+      margin: 0 40px;
+      align-items: flex-start;
+    }
+    .img-box {
+      min-width: 320px;
+      text-align: center;
+    }
+    .img-box img {
+      width: 320px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px #0002;
+      margin-bottom: 8px;
+    }
+    .img-caption {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 18px;
+    }
+    .post {
+      max-width: 600px;
+    }
+    .post h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .post .meta {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 18px;
+    }
+    .post p {
+      font-size: 17px;
+      margin-bottom: 16px;
+      text-align: justify;
+    }
+    .post strong {
+      font-weight: bold;
+    }
+    .post ul {
+      margin-top: 10px;
+      margin-bottom: 18px;
+    }
+    .post li {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    .post a {
+      color: #1a0dab;
+      text-decoration: underline;
+    }
+    .post .highlight {
+      background: yellow;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Início</a>
+    <a href="busca.html">Busca</a>
+    <a href="form-table.html">Formulário/Tabela</a>
+    <a href="postagem.html" class="active">Postagem c/ imagem</a>
+  </div>
+  <div class="main-title">Postagem com imagem</div>
+  <div class="content">
+    <div class="img-box">
+      <img src="Arquivos-Praticando1-Revisao-HTML-CSS/Deep_fake_Tom_Cruise.jpeg" alt="Exemplo de Deepfake">
+      <div class="img-caption">Exemplo de <i>Deepfake</i> - <a href="https://www.xataka.com.br/informatica/relatorio-alerta-que-inteligencia-artificial-e-deepfakes-podem-transformar-a-internet-em-2026-e-afetar-eleicoes-no-brasil" target="_blank">fonte</a></div>
+    </div>
+    <div class="post">
+      <h2>Relatório alerta que inteligência artificial e deepfakes podem transformar a internet em 2026 e afetar eleições no Brasil</h2>
+      <div class="meta">21 janeiro 2026, por Laura Vieira</div>
+      <p>A internet funciona hoje como um sistema nervoso global: conecta pessoas, sustenta serviços essenciais, viabiliza transações financeiras e distribui informação. Mas, segundo uma análise de Akamai, empresa global de infraestrutura e segurança digital, a forma como usamos a internet deve passar por uma mudança profunda a partir de 2026.</p>
+      <p>Essa transformação será impulsionada pelo avanço de agentes de inteligência artificial, pelo aumento de deepfakes em tempo real e pela pressão crescente sobre a infraestrutura digital. No Brasil, esse cenário se torna ainda mais sensível por coincidir com um ano de eleições presidenciais.</p>
+      <p>Dados do <strong>Fraud and Abuse Report 2025</strong> indicam que esse movimento já está em curso, com crescimento expressivo do tráfego automatizado e de ameaças baseadas em inteligência artificial.</p>
+      <h3>Agentes de IA devem mudar a forma de navegar</h3>
+      <p>Uma das mudanças mais profundas previstas está na forma como as pessoas acessam a internet. O modelo baseado em cliques, buscas e navegação manual começa a ficar ultrapassado diante do avanço da automação e da inteligência artificial.</p>
+      <p>Segundo a Akamai, a adoção de agentes de inteligência artificial como intermediários do acesso à internet tende a crescer. Em vez de navegar por sites e links, o consumidor delega tarefas ao agente, que executa tarefas como encontrar informações, buscar dados, comparar serviços e resolver problemas sem interação manual.</p>
+      <p>Esse novo padrão reduz a centralidade dos mecanismos de busca tradicionais e altera a dinâmica do tráfego digital, exigindo que empresas e produtores de conteúdo revisem suas estratégias.</p>
+      <h3>Deepfakes em tempo real elevam riscos em ano eleitoral</h3>
+      <p>As deepfakes são conteúdos manipulados por inteligência artificial, como vídeos, áudios e imagens, capazes de simular com alto grau de realismo a aparência e a voz de pessoas reais. Além do potencial de enganar o reconhecimento facial e labial, essas falsificações se tornam mais acessíveis e difíceis de detectar.</p>
+      <p>O relatório destaca o crescimento dos sistemas automatizados e aponta um risco significativo para transmissões ao vivo, entrevistas e debates, especialmente em ano eleitoral no Brasil.</p>
+      <p>Paralelamente, ataques digitais executados por sistemas automatizados já operam escala industrial. Em apenas um ano, a atividade de bots alimentados por IA cresceu de <span class="highlight">300%</span> em todo o mundo, com foco crescente em alvos corporativos.</p>
+      <ul>
+        <li>crescimento acelerado do uso de inteligência artificial</li>
+        <li>avanço de deepfakes em tempo real</li>
+        <li>aumento expressivo de ataques automatizados</li>
+        <li>impactos diretos sobre eleições e infraestrutura digital</li>
+      </ul>
+      <strong>Fontes:</strong><br>
+      <br>
+      <a href="https://www.xataka.com.br/informatica/relatorio-alerta-que-inteligencia-artificial-e-deepfakes-podem-transformar-a-internet-em-2026-e-afetar-eleicoes-no-brasil" target="_blank">https://www.xataka.com.br/informatica/relatorio-alerta-que-inteligencia-artificial-e-deepfakes-podem-transformar-a-internet-em-2026-e-afetar-eleicoes-no-brasil</a><br>
+      <br>
+      <a href="https://waroom.army.vcacollege.edu.br/deepfakes" target="_blank">https://waroom.army.vcacollege.edu.br/deepfakes</a>
+      <br>  
+    </div>
+  </div>
+</body>
+</html>

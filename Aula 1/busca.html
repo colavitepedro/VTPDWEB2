@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busca HTML</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+    .navbar {
+      background: #cfd8e6;
+      padding: 8px 0;
+      text-align: right;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+    }
+    .navbar a {
+      color: #222;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 500;
+      transition: background 0.2s, color 0.2s;
+      padding: 4px 8px;
+      border-radius: 3px;
+    }
+    .navbar a:hover {
+      background: #4b2e83;
+      color: #fff;
+    }
+    .banner {
+      background: url('Arquivos-Praticando1-Revisao-HTML-CSS/360_F_440137850_sBJOKpItVGgxB2XgCY4pxJECaU3QTEXC.jpg') center/cover no-repeat;
+      height: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .banner-title {
+      color: orange;
+      font-family: 'Oswald', Arial, sans-serif;
+      font-size: 44px;
+      font-weight: bold;
+      margin-bottom: 18px;
+      text-shadow: 1px 1px 8px #222;
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+    }
+    .search-box input[type="text"] {
+      font-size: 22px;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 2px 0 0 2px;
+      width: 260px;
+    }
+    .search-box input[type="submit"] {
+      font-size: 22px;
+      padding: 6px 18px;
+      border: 1px solid #ccc;
+      border-radius: 0 2px 2px 0;
+      background: #fff;
+      cursor: pointer;
+    }
+    .links {
+      margin: 40px 0 0 60px;
+      font-size: 22px;
+    }
+    .links ul {
+      list-style-type: square;
+      padding-left: 18px;
+    }
+    .links li {
+      margin-bottom: 16px;
+    }
+    .links a {
+      color: #4b2e83;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+    .highlight-green {
+      background: #1ca02c;
+      color: #fff;
+      padding: 0 4px;
+      border-radius: 2px;
+      font-weight: 500;
+    }
+    .links em {
+      color: #444;
+      font-size: 18px;
+      font-style: italic;
+      margin-left: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Início</a>
+    <a href="busca.html" class="active">Busca</a>
+    <a href="form-table.html">Formulário/Tabela</a>
+    <a href="postagem.html">Postagem c/ imagem</a>
+  </div>
+  <div class="banner">
+    <div class="banner-title">Busca de conteúdo</div>
+    <form class="search-box">
+      <input type="text" placeholder="Digite para buscar">
+      <input type="submit" value="Pesquisar">
+    </form>
+  </div>
+  <div class="links">
+    <ul>
+      <li><a href="https://github.com/colavitepedro/VTPDWEB1">Sobre mim</a></li>
+      <li><a href="https://vtp.ifsp.edu.br/" target="_blank">Site do <span class="highlight-green">IFSP Campus Votuporanga</span></a><em>(nova aba)</em></li>
+      <li><a href="https://vtp.ifsp.edu.br/index.php/campus-votuporanga/70-institucional/2604-bsi.html" target="_blank">PPC Atualizado do Curso de BSI</a><em>(nova aba)</em></li>
+    </ul>
+  </div>
+</body>
+</html>
