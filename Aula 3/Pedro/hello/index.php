@@ -8,7 +8,7 @@ date_default_timezone_set("America/Sao_Paulo");
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello World</title>
 </head>
-<body style="background-color: #dddddd;">
+<body style="background-color: #e5e5e5ff;">
   <h1>My first PHP page</h1>
   <h1>Hello world!</h1>
 
