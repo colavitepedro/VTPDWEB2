@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cadastro</title>
+  <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Formulário de cadastro</h1>
+    
+    <form id="cadastroForm" method="POST" enctype="multipart/form-data">
+      
+      <div class="form-group">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+<br>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" required>
+        </div>
+        <div class="form-group">
+          <label for="dataNascimento">Data de Nascimento</label>
+          <input type="date" id="dataNascimento" name="dataNascimento" required>
+        </div>
+        <div class="form-group">
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group endereco">
+          <label for="endereco">Endereço</label>
+          <input type="text" id="endereco" name="endereco" required>
+        </div>
+        <div class="form-group">
+          <label for="cidade">Cidade</label>
+          <select id="cidade" name="cidade" required>
+            <option value="">[selecione]</option>
+            <option value="sao-paulo">São Paulo</option>
+            <option value="rio-de-janeiro">Rio de Janeiro</option>
+            <option value="belo-horizonte">Belo Horizonte</option>
+            <option value="brasilia">Brasília</option>
+            <option value="votuporanga">Votuporanga</option>
+            <option value="fernandopolis">Fernandópolis</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fotoPerfil">Foto de perfil</label>
+          <input type="file" id="fotoPerfil" name="fotoPerfil" required accept="image/*">
+        </div>
+        <div class="form-group">
+          <label for="contrato">Contrato assinado (em PDF)</label>
+          <input type="file" id="contrato" name="contrato" required accept=".pdf,application/pdf">
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="forms.js"></script>
+</body>
+</html>
