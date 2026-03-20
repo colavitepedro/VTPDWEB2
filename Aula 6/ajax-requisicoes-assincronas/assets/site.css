@@ -1,0 +1,204 @@
+:root {
+  --text-main: #343a40;
+  --text-soft: #5f6368;
+  --line: #cfcfcf;
+  --footer-green: #64a72f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #ffffff;
+  color: var(--text-main);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+.page-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+.page-heading {
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+.page-heading h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4.3vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #3f3f46;
+}
+
+.page-copy {
+  max-width: 780px;
+  margin: 12px 0 0;
+  font-size: 1.02rem;
+  color: var(--text-soft);
+}
+
+.simple-menu-heading {
+  margin-bottom: 18px;
+}
+
+.simple-menu-heading h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.simple-list {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid #d9d9d9;
+}
+
+.menu-card {
+  padding: 20px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.menu-card-number {
+  margin: 0 0 6px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #6b7280;
+}
+
+.menu-card h2 {
+  margin: 0 0 8px;
+  font-size: 1.55rem;
+  line-height: 1.2;
+  color: #222222;
+}
+
+.menu-card p:not(.menu-card-number) {
+  max-width: 780px;
+  margin: 0 0 10px;
+  color: var(--text-soft);
+}
+
+.simple-link,
+.back-link {
+  color: #0d6efd;
+  text-decoration: underline;
+  text-underline-offset: 0.14rem;
+}
+
+.simple-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #d9d9d9;
+}
+
+.simple-menu li {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.simple-menu a {
+  display: block;
+  padding: 14px 0;
+  color: #0d6efd;
+  text-decoration: underline;
+  text-underline-offset: 0.14rem;
+}
+
+.simple-link {
+  display: inline-block;
+}
+
+.form-section {
+  max-width: 620px;
+}
+
+.email-check-form,
+.simple-panel {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.email-check-form .input-group {
+  max-width: 520px;
+}
+
+.feedback-text {
+  min-height: 1.6rem;
+  font-weight: 500;
+}
+
+.priority-stack .form-check + .form-check {
+  margin-top: 0.45rem;
+}
+
+.section-title {
+  margin: 0 0 1.15rem;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: #222222;
+}
+
+.table-section {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.table-shell {
+  overflow-x: auto;
+}
+
+.table-shell .table {
+  margin-bottom: 0;
+}
+
+.table-shell .table > :not(caption) > * > * {
+  padding: 0.95rem 0.8rem;
+}
+
+.table-shell .badge {
+  min-width: 72px;
+  padding: 0.45em 0.78em;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.action-row {
+  display: flex;
+  gap: 0.85rem;
+  margin-top: 1.4rem;
+}
+
+.status-alert {
+  font-weight: 600;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .page-shell {
+    padding: 26px 16px 52px;
+  }
+
+  .email-check-form .input-group {
+    max-width: 100%;
+  }
+}
