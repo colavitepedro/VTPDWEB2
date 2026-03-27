@@ -1,0 +1,8 @@
+{
+    "pages": {
+        "inicio": 0,
+        "sobre": 0,
+        "contato": 0
+    },
+    "next_log_id": 1
+}
