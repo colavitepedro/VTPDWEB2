@@ -2,16 +2,10 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
-require_once __DIR__ . '/functions.php';
-require_once __DIR__ . '/auth.php';
-require_once __DIR__ . '/storage.php';
+require_once __DIR__ . '/funcoes.php';
 
-date_default_timezone_set(APP_TIMEZONE);
+date_default_timezone_set(FUSO_HORARIO_APLICACAO);
 
 if (session_status() !== PHP_SESSION_ACTIVE) {
-    session_start([
-        'cookie_httponly' => true,
-        'cookie_samesite' => 'Lax',
-        'use_strict_mode' => true,
-    ]);
+    session_start();
 }

@@ -266,10 +266,6 @@ $linkLimpar = link_com_parametros(['limpar' => '1']);
       <p>Email: <?= escapar($email) ?></p>
     <?php endif; ?>
   <?php else: ?>
-    <div class="hint-box">
-      <p>Selecione um dos links de usuário e uma das cores.</p>
-      <p>Os dados serão gravados em cookies e a página continuará preenchida mesmo após ser fechada e aberta novamente.</p>
-    </div>
   <?php endif; ?>
 
   <div class="links">

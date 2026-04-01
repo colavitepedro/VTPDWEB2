@@ -1,43 +1,47 @@
 <?php
 declare(strict_types=1);
 
-const APP_NAME = 'Servidor Web da disciplina de VTPDWE2 2026/01';
-const APP_TIMEZONE = 'America/Sao_Paulo';
-const STUDENT_NAME = 'Pedro Colavite Conilho';
-const STUDENT_EMAIL = 'colavitepedro1@gmail.com';
-const STUDENT_PHOTO = 'assets/img/fotoPedro.jpg';
-const CEP_ACTIVITY_URL = 'busca-cep.php';
-const LOGS_SECRET = 'senha_da_nasa';
+const NOME_APLICACAO = 'Servidor Web da disciplina de VTPDWE2 2026/01';
+const FUSO_HORARIO_APLICACAO = 'America/Sao_Paulo';
+const NOME_ALUNO = 'Pedro Colavite Conilho';
+const EMAIL_ALUNO = 'colavitepedro1@gmail.com';
+const FOTO_ALUNO = 'assets/img/fotoPedro.jpg';
+const URL_ATIVIDADE_CEP = 'busca-cep.php';
+const CHAVE_ACESSO_LOGS = 'senha_da_nasa';
 
-function tracked_pages(): array
-{
-    return [
-        'inicio' => [
-            'label' => 'Início',
-            'file' => 'inicio.php',
-            'summary' => 'Panorama do projeto e dos objetivos do laboratório.',
-        ],
-        'sobre' => [
-            'label' => 'Sobre',
-            'file' => 'sobre.php',
-            'summary' => 'Bastidores, escolhas técnicas e princípios usados no trabalho.',
-        ],
-        'contato' => [
-            'label' => 'Contato',
-            'file' => 'contato.php',
-            'summary' => 'Canais de contato e informações rápidas para networking.',
-        ],
-    ];
-}
+const PAGINAS_MONITORADAS = [
+    'inicio' => [
+        'rotulo' => 'Início',
+        'arquivo' => 'inicio.php',
+        'resumo' => 'Apresentação do projeto e dos requisitos do trabalho.',
+    ],
+    'sobre' => [
+        'rotulo' => 'Sobre',
+        'arquivo' => 'sobre.php',
+        'resumo' => 'Resumo das decisões usadas na construção do site.',
+    ],
+    'contato' => [
+        'rotulo' => 'Contato',
+        'arquivo' => 'contato.php',
+        'resumo' => 'Informações de contato e de publicação do projeto.',
+    ],
+];
 
-function internal_navigation(): array
-{
-    $navigation = tracked_pages();
-    $navigation['logs'] = [
-        'label' => 'Logs de Acesso',
-        'file' => 'logs.php',
-        'summary' => 'Estatísticas e registros das visualizações monitoradas.',
-    ];
-
-    return $navigation;
-}
+const MENU_PRINCIPAL = [
+    'inicio' => [
+        'rotulo' => 'Início',
+        'arquivo' => 'inicio.php',
+    ],
+    'sobre' => [
+        'rotulo' => 'Sobre',
+        'arquivo' => 'sobre.php',
+    ],
+    'contato' => [
+        'rotulo' => 'Contato',
+        'arquivo' => 'contato.php',
+    ],
+    'logs' => [
+        'rotulo' => 'Logs de Acesso',
+        'arquivo' => 'logs.php',
+    ],
+];

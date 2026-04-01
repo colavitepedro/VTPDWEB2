@@ -39,7 +39,6 @@ require __DIR__ . '/includes/header.php';
         <article class="text-card accent-card">
           <h2>Descrição</h2>
           <p><?= escapar((string) ($usuario['bio'] ?? '')) ?></p>
-          <p>Esta é a área restrita do site. Se a sessão não existir, o código redireciona automaticamente para a autenticação.</p>
         </article>
       </section>
 <?php require __DIR__ . '/includes/footer.php'; ?>

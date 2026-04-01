@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/includes/bootstrap.php';
 
-$trackingMessage = register_page_view_with_feedback('inicio');
-$pageTitle = 'Início | Trabalho 1';
-$activePage = 'inicio';
+$mensagemRegistro = registrar_acesso_com_mensagem('inicio');
+$tituloPagina = 'Início | Trabalho 1';
+$paginaAtiva = 'inicio';
 
 require __DIR__ . '/includes/header.php';
 ?>
@@ -13,10 +13,6 @@ require __DIR__ . '/includes/header.php';
   <div>
     <p class="eyebrow">Projeto PHP</p>
     <h1 class="section-title">Contador de acessos com persistência em arquivos de texto</h1>
-    <p class="section-lead">
-      Este site foi pensado para demonstrar navegação entre páginas, controle de visualizações por arquivo
-      e uma área restrita para auditoria dos acessos registrados.
-    </p>
   </div>
 
   <div class="hero-card__aside">
@@ -26,9 +22,9 @@ require __DIR__ . '/includes/header.php';
   </div>
 </section>
 
-<?php if ($trackingMessage !== null): ?>
+<?php if ($mensagemRegistro !== null): ?>
   <div class="feedback-banner feedback-banner--warning">
-    <?= escape_html($trackingMessage) ?>
+    <?= escapar($mensagemRegistro) ?>
   </div>
 <?php endif; ?>
 
