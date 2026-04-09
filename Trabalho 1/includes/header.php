@@ -22,8 +22,8 @@ $classeCorpo = 'page-' . ($paginaAtiva !== '' ? $paginaAtiva : 'default');
   <div class="site-shell">
     <header class="site-header">
       <a class="site-brand" href="index.php">
-        <span class="site-brand__mark">P</span>
-        <span class="site-brand__text">Pedro Colavite Conilho</span>
+        <span class="site-brand__mark">PK</span>
+        <span class="site-brand__text"><?= escapar(NOME_TEMA) ?></span>
       </a>
 
       <nav class="site-nav" aria-label="Navegação principal">

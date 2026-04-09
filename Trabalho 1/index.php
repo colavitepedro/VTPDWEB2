@@ -36,8 +36,8 @@ require_once __DIR__ . '/includes/bootstrap.php';
               <span class="feature-link__label">Praticando Busca CEP</span>
             </a>
 
-            <a class="feature-link" href="inicio.php">
-              <span class="feature-link__label">Trabalho 1 - Contador de Acessos</span>
+            <a class="feature-link" href="mudkip.php">
+              <span class="feature-link__label">Trabalho 1 - Linha evolutiva do Mudkip</span>
             </a>
           </div>
         </div>
