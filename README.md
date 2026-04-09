@@ -12,18 +12,13 @@ Este repositório contém os materiais e práticas da disciplina de Desenvolvime
 
 O repositório está organizado em pastas de práticas e atividades desenvolvidas ao longo da disciplina:
 
-• **Aula 1:** Exercícios de revisão de HTML e CSS
-  - `busca.html` - Página de busca
-  - `form-table.html` - Formulários e tabelas
-  - `index.html` - Página principal
-  - `postagem.html` - Página de postagem
-  - `Arquivos-Praticando1-Revisao-HTML-CSS/` - Recursos adicionais
 
 ## Tecnologias
 
 • HTML5  
 • CSS3  
-• JavaScript  
+• JavaScript
+• PHP
 • Frameworks e bibliotecas modernas para desenvolvimento web
 
 ## Sobre
